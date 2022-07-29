@@ -43,9 +43,9 @@ Do the following:
 let firstThing = 23;
 let secondThing = 40;
 if (firstThing === secondThing){
-  console.log (true)
+  console.log (true);
 } else {
-  console.log (false)
+  console.log (false);
 }
 
 
@@ -61,8 +61,8 @@ Do the following:
    HINT: look up the Number method
 */
 
-
-
+var myString = "1999";
+console.log(Number(myString));
 
 /*
 Task 1d - Multiply
