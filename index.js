@@ -20,6 +20,12 @@ Do the following:
    HINT: no function required
 */
 
+let votingAge = 19;
+if (votingAge > 18) {
+  console.log(true);
+} else {
+  console.log(false);
+}
 
 
 /*
@@ -34,7 +40,13 @@ Do the following:
    HINT: no function required
 */
 
-
+let firstThing = 23;
+let secondThing = 40;
+if (firstThing === secondThing){
+  console.log (true)
+} else {
+  console.log (false)
+}
 
 
 
