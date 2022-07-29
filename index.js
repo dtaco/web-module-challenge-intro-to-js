@@ -143,17 +143,17 @@ NOTE 2: This is a great time to check the tests to see what it expects, versus w
 function hungryDog(pounds, years){
   if (years >= 1 && pounds <= 5){
     return (pounds * .05)
-  } else if (years >= 1 && pounds >= 6 <= 10) {
+  } else if (years >= 1 && pounds <= 10) {
     return (pounds* .04)
-  } else if (years >= 1 && pounds >= 11 <= 15) {
+  } else if (years >= 1 && pounds <= 15) {
     return (pounds * .03)
   } else if (years >= 1 && pounds > 15) {
     return (pounds * .02);
-  } else if (years >= .17 <= .33) {
+  } else if (years <= .33) {
     return (pounds *.10)
-  } else if (years >= .42 <= .58){
+  } else if (years <= .58){
     return (pounds*.05)
-  } else if (years >= .67 <= .92){
+  } else if (years <= .92){
     return (pounds*.04)
   }
 }
