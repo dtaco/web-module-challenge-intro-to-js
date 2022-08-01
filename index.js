@@ -74,7 +74,7 @@ Do the following:
 */
 
 function multiply(a, b){
-  return (a*b)
+  return (a*b);
 }
 console.log(multiply(3,3))
 
@@ -89,7 +89,7 @@ Do the following:
 */
 
 function dogYears(age){
-return (age*7)
+return (age*7);
 }
 console.log(dogYears(33))
 
@@ -142,19 +142,19 @@ NOTE 2: This is a great time to check the tests to see what it expects, versus w
 
 function hungryDog(pounds, years){
   if (years >= 1 && pounds <= 5){
-    return (pounds * .05)
+    return (pounds * .05);
   } else if (years >= 1 && pounds <= 10) {
-    return (pounds* .04)
+    return (pounds* .04);
   } else if (years >= 1 && pounds <= 15) {
-    return (pounds * .03)
+    return (pounds * .03);
   } else if (years >= 1 && pounds > 15) {
     return (pounds * .02);
   } else if (years <= .33) {
-    return (pounds *.10)
+    return (pounds *.10);
   } else if (years <= .58){
-    return (pounds*.05)
+    return (pounds*.05);
   } else if (years <= .92){
-    return (pounds*.04)
+    return (pounds*.04);
   }
 }
 
@@ -182,11 +182,43 @@ Use the game function below to do the following:
 RULES OF THE GAME: Scissors beats Paper | Paper beats Rock | Rock beats Scissors | Or there's a tie
 */
 
+var computer = Math.random ();
+
 function game(user, computer){
-  /*add your code here*/
+  if (computer <= .33) {
+    computer = 'rock';
+  } else if (computer <= .66) {
+    computer = 'paper';
+  } else if (computer <= 1) {
+    computer = 'scissors';
+  }
+
+  const win = ('you win!');
+  const lose = ('you lose!');
+  const tie = ("it's a tie");
+  
+  if (user === 'rock' && computer === 'rock') {
+    return (tie)
+  } else if (user === 'rock' && computer === 'paper') {
+    return (lose)
+  } else if (user === 'rock' && computer === 'scissors') {
+    return (win)
+  } else if (user === 'paper' && computer === 'rock') {
+    return (win)
+  } else if (user === 'paper' && computer === 'paper') {
+    return (tie)
+  } else if (user === 'paper' && computer === 'scissors') {
+    return (lose)
+  } else if (user === 'scissors' && computer === 'rock') {
+    return (lose)
+  } else if (user === 'scissors' && computer === 'paper') {
+    return (win)
+  } else if (user === 'scissors' && computer === 'scissors') {
+    return (tie)
+  }
 }
 
-
+console.log(game())
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
