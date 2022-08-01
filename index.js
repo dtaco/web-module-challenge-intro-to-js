@@ -198,23 +198,23 @@ function game(user, computer){
   const tie = ("it's a tie");
   
   if (user === 'rock' && computer === 'rock') {
-    return (tie)
+    return (tie);
   } else if (user === 'rock' && computer === 'paper') {
-    return (lose)
+    return (lose);
   } else if (user === 'rock' && computer === 'scissors') {
-    return (win)
+    return (win);
   } else if (user === 'paper' && computer === 'rock') {
-    return (win)
+    return (win);
   } else if (user === 'paper' && computer === 'paper') {
-    return (tie)
+    return (tie);
   } else if (user === 'paper' && computer === 'scissors') {
-    return (lose)
+    return (lose);
   } else if (user === 'scissors' && computer === 'rock') {
-    return (lose)
+    return (lose);
   } else if (user === 'scissors' && computer === 'paper') {
-    return (win)
+    return (win);
   } else if (user === 'scissors' && computer === 'scissors') {
-    return (tie)
+    return (tie);
   }
 }
 
@@ -232,7 +232,7 @@ Using the miles function below do the following:
 */
 
 function miles(km){
-  return (km*.621371)
+  return (km*.621371);
 }
  miles ()
 
@@ -267,7 +267,9 @@ Using the annoyingSong function below do the following:
 */
 
 function annoyingSong(startingNumber){
-  return `${startingNumber} bottles of soda on the wall, ${startingNumber} bottles of soda, take one down pass it around ${startingNumber - 1} bottles of soda on the wall`
+  for( let i = startingNumber; i > 0; i--){
+  return `${i} bottles of soda on the wall, ${i} bottles of soda, take one down pass it around ${i - 1} bottles of soda on the wall`;
+  }
 }
 
 console.log(annoyingSong ());
